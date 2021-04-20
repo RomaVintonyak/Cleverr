@@ -67,8 +67,38 @@
           </div><!--/.table__header-->
           <!--Table select-->
           <div class="table__select">
-            
-          </div>
+            <div class="table__select--currency">
+              <p class="select__title">Select currency</p>
+              <div class="currency__input">
+                <input type="radio" id="usd" name="currency">
+                <label for="usd">USD</label>
+                <input type="radio" id="eur" name="currency">
+                <label for="eur">EUR</label>
+                <input type="radio" id="cad" name="currency">
+                <label for="cad">CAD</label>
+                <input type="radio" id="gbp" name="currency">
+                <label for="gbp">GBP</label>
+                <input type="radio" id="aud" name="currency">
+                <label for="aud">AUD</label> 
+              </div>
+            </div><!--/.currency-->
+            <div class="table__select--services">
+              <p class="select__title">Type of services</p>
+              <div class="services__input">
+                <input id="services" type="text" placeholder="Resume/CV services">
+              </div>
+            </div><!--/.services-->
+            <div class="table__select--level">
+              <p class="select__title">Type level</p>
+              <div class="select__type">
+                <select name="type" id="select">
+                  <option value="" disabled selected>Entry</option>
+                  <option value="opt1">Option№ 1</option>
+                  <option value="opt2">Option№ 2</option>
+                </select>
+              </div>
+            </div><!--/.level-->
+          </div><!--/.table__select-->
         </div><!--table-->
         <aside class="aside">
 
