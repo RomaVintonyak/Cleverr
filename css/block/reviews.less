@@ -1,0 +1,53 @@
+//main: ../style.less
+
+.reviews {
+  &__title {
+    h2 {
+      font-size     : 2.8rem;
+      font-family   : @roboto;
+      color         : @text;
+      font-weight   : bold;
+      text-transform: uppercase;
+      line-height   : 1.2;
+    }
+  }
+
+  &__row {
+    margin-top     : 4rem;
+    display        : flex;
+    justify-content: space-evenly;
+    align-items    : flex-start;
+
+    &--coll {
+      text-align: center;
+
+      img {
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        font-size  : 2.2rem;
+        font-family: @roboto;
+        color      : @text;
+        font-weight: bold;
+        line-height: 1.2;
+      }
+
+      p {
+        font-size  : 2.2rem;
+        font-family: @roboto;
+        color      : #fa9c2a;
+        font-weight: bold;
+        line-height: 1.2;
+
+        span {
+          font-size  : 2.2rem;
+          font-family: @roboto;
+          color      : @text;
+          font-weight: bold;
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+}

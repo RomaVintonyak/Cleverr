@@ -736,7 +736,32 @@ a:focus {
   color: #3fa398;
 }
 /*===Table footer===*/
-/*. aside*/
+.table__footer {
+  margin-top: 5rem;
+}
+.table__footer--row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__price {
+  display: flex;
+  align-items: center;
+}
+.footer__price p {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-weight: bold;
+  margin-right: 1.5rem;
+}
+.footer__price h3 {
+  font-size: 2.4rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-weight: bold;
+}
+/*5. aside*/
 .aside {
   width: 32%;
 }
@@ -774,5 +799,90 @@ a:focus {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
+}
+/*6. btn*/
+.btn {
+  border: none;
+  border-radius: 40px;
+  background-image: -moz-linear-gradient(-90deg, #ffb338 0%, #fd9c3c 100%);
+  background-image: -webkit-linear-gradient(-90deg, #ffb338 0%, #fd9c3c 100%);
+  background-image: -ms-linear-gradient(-90deg, #ffb338 0%, #fd9c3c 100%);
+  width: 340px;
+  height: 50px;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active {
+  transform: scale(0.99);
+}
+/*7. reviews*/
+.reviews__title h2 {
+  font-size: 2.8rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.reviews__row {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.reviews__row--coll {
+  text-align: center;
+}
+.reviews__row--coll img {
+  margin-bottom: 2rem;
+}
+.reviews__row--coll h3 {
+  font-size: 2.2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.reviews__row--coll p {
+  font-size: 2.2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #fa9c2a;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.reviews__row--coll p span {
+  font-size: 2.2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+}
+/*8. footer*/
+.footer {
+  width: 100%;
+  background-color: #1a5245;
+}
+.footer__row {
+  width: 100%;
+  height: 41rem;
+  position: relative;
+}
+.footer__row--top {
+  position: absolute;
+  top: -7.6rem;
+  left: 0;
+  z-index: 5;
+}
+.footer__row--bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 5;
 }
 /*# sourceMappingURL=./style.css.map */

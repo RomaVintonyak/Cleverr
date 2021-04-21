@@ -218,12 +218,12 @@
 }
 
 .body__gradinet {
-  height: 300px;
+  height      : 300px;
   width       : 4rem;
   margin-right: 1rem;
 
   &--active {
-    height: 60%;
+    height                 : 60%;
     width                  : 100%;
     background-color       : #ebf5f4;
     display                : flex;
@@ -243,7 +243,7 @@
   }
 
   &--noneactive {
-    height: 40%;
+    height                    : 40%;
     width                     : 100%;
     display                   : flex;
     justify-content           : center;
@@ -261,106 +261,155 @@
     }
   }
 }
-.body__content{
+
+.body__content {
   width: 100%;
 }
-.content__header{
-  width: 100%;
-  height: 5rem;
-  display: flex;
+
+.content__header {
+  width      : 100%;
+  height     : 5rem;
+  display    : flex;
   align-items: center;
-  padding: 0 2.5rem;
-  &--title{
-    width: 40%;
-      font-size: 1.4rem;
-      font-family: @roboto;
-      color: @text;
-      font-weight: bold;
+  padding    : 0 2.5rem;
+
+  &--title {
+    width      : 40%;
+    font-size  : 1.4rem;
+    font-family: @roboto;
+    color      : @text;
+    font-weight: bold;
   }
-  &--day{
-    width: 15%;
-      font-size: 1.4rem;
-      font-family: @roboto;
-      color: @text;
-      font-weight: bold;
+
+  &--day {
+    width      : 15%;
+    font-size  : 1.4rem;
+    font-family: @roboto;
+    color      : @text;
+    font-weight: bold;
   }
-  &--hour{
-    width: 15%;
-      font-size: 1.4rem;
-      font-family: @roboto;
-      color: @text;
-      font-weight: bold;
+
+  &--hour {
+    width      : 15%;
+    font-size  : 1.4rem;
+    font-family: @roboto;
+    color      : @text;
+    font-weight: bold;
   }
 }
-.content__row{
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  padding: 0 2.5rem;
+
+.content__row {
+  width        : 100%;
+  height       : 5rem;
+  display      : flex;
+  align-items  : center;
+  padding      : 0 2.5rem;
   border-radius: 10px;
-  &--active{
+
+  &--active {
     background-color: #f8f9f9;
   }
-  &--title{
-    width: 40%;
-      font-size: 1.4rem;
-      font-family: @roboto;
-      color: @text;
-      font-weight: bold;
-  }
-  &--data{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
-    height: 100%;
-    input{
-      appearance: none;
-      -webkit-appearance: none;
-      position: absolute;
-    }
-    label{
-    width: 25%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(102, 102, 102);
-    font-weight: bold;
-    font-size: 1.4rem;
+
+  &--title {
+    width      : 40%;
+    font-size  : 1.4rem;
     font-family: @roboto;
-    transition     : color 0.2s linear, background-color 0.2s linear;
-    &:focus{
-      outline: none;
+    color      : @text;
+    font-weight: bold;
+  }
+
+  &--data {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    width          : 60%;
+    height         : 100%;
+
+    input {
+      appearance        : none;
+      -webkit-appearance: none;
+      position          : absolute;
     }
-    &:hover{
-      cursor: pointer;
-        border-radius: 10px;
+
+    label {
+      width          : 25%;
+      height         : 100%;
+      display        : flex;
+      justify-content: center;
+      align-items    : center;
+      color          : rgb(102, 102, 102);
+      font-weight    : bold;
+      font-size      : 1.4rem;
+      font-family    : @roboto;
+      transition     : color 0.2s linear, background-color 0.2s linear;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        cursor          : pointer;
+        border-radius   : 10px;
         background-color: rgb(235, 245, 244);
-        color: #3fa398;
+        color           : #3fa398;
       }
     }
   }
 }
+
 ._price[type="radio"]:checked+label {
   background-color: rgb(235, 245, 244);
-  color: #3fa398;
+  color           : #3fa398;
 }
+
 ._cover[type="radio"]:checked+label {
   background-color: rgb(235, 245, 244);
-  color: #3fa398;
+  color           : #3fa398;
 }
+
 ._cv[type="radio"]:checked+label {
   background-color: rgb(235, 245, 244);
-  color: #3fa398;
+  color           : #3fa398;
 }
+
 ._letter[type="radio"]:checked+label {
   background-color: rgb(235, 245, 244);
-  color: #3fa398;
+  color           : #3fa398;
 }
+
 ._storage[type="radio"]:checked+label {
   background-color: rgb(235, 245, 244);
-  color: #3fa398;
+  color           : #3fa398;
 }
+
 /*===Table footer===*/
+.table__footer {
+  margin-top: 5rem;
+
+  &--row {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+  }
+}
+
+.footer__price {
+  display    : flex;
+  align-items: center;
+
+  p {
+    font-size   : 1.6rem;
+    font-family : @roboto;
+    color       : @text;
+    font-weight : bold;
+    margin-right: 1.5rem;
+  }
+
+  h3 {
+    font-size  : 2.4rem;
+    font-family: @roboto;
+    color      : rgb(51, 51, 51);
+    font-weight: bold;
+  }
+
+}
