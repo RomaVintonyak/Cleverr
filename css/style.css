@@ -774,14 +774,13 @@ a:focus {
   font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
   transition: color 0.2s linear, background-color 0.2s linear;
+  border-radius: 10px;
 }
 .content__row--data label:focus {
   outline: none;
 }
 .content__row--data label:hover {
-  cursor: pointer;
-  border-radius: 10px;
-  background-color: #ebf5f4;
+  cursor: url("../img/cursor/cursor.png"), auto;
   color: #3fa398;
 }
 ._price[type="radio"]:checked + label {
