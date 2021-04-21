@@ -70,15 +70,15 @@
             <div class="table__select--currency">
               <p class="select__title">Select currency</p>
               <div class="currency__input">
-                <input type="radio" id="usd" name="currency">
+                <input class="_currency" type="radio" id="usd" name="currency">
                 <label for="usd">USD</label>
-                <input type="radio" id="eur" name="currency">
+                <input class="_currency" type="radio" id="eur" name="currency">
                 <label for="eur">EUR</label>
-                <input type="radio" id="cad" name="currency">
+                <input class="_currency" type="radio" id="cad" name="currency">
                 <label for="cad">CAD</label>
-                <input type="radio" id="gbp" name="currency">
+                <input class="_currency" type="radio" id="gbp" name="currency">
                 <label for="gbp">GBP</label>
-                <input type="radio" id="aud" name="currency">
+                <input class="_currency" type="radio" id="aud" name="currency">
                 <label for="aud">AUD</label> 
               </div>
             </div><!--/.currency-->
@@ -106,9 +106,92 @@
               <div class="body__gradinet--noneactive"><p>Other</p></div>
             </div><!--/.body__gradient-->
             <div class="body__content">
-              
+              <div class="content__header">
+                <div class="content__header--title">Services</div>
+                <div class="content__header--day text__center">5 days</div>
+                <div class="content__header--day text__center">3 days</div>
+                <div class="content__header--hour text__center">48 hourse</div>
+                <div class="content__header--hour text__center">24hourse</div>
+              </div><!--/.content__header-->
+              <div class="content__row content__row--active">
+                <div class="content__row--title">Resume writing</div>
+                <div class="content__row--data">
+                  <input class="_price" type="radio" id="ResUsd5d" name="money" data-money="usd" value="125.55">
+                  <label for="ResUsd5d">&dollar;125.55</label>
+                  <input class="_price" type="radio" id="ResUsd3d" name="money" data-money="usd" value="125.55">
+                  <label for="ResUsd3d">&dollar;125.55</label>
+                  <input class="_price" type="radio" id="ResUsd48h" name="money" data-money="usd" value="125.55">
+                  <label for="ResUsd48h">&dollar;125.55</label>
+                  <input class="_price" type="radio" id="ResUsd24h" name="money" data-money="usd" value="125.55">
+                  <label for="ResUsd24h">&dollar;125.55</label>
+                </div>
+              </div><!--/.content__row-->
+              <div class="content__row">
+                <div class="content__row--title">Resume Package: Resume + Cover letter writing</div>
+                <div class="content__row--data">
+                  <input class="_cover" type="radio" id="CoverUsd5d" name="money" data-money="usd" value="125.55">
+                  <label for="CoverUsd5d">&dollar;125.55</label>
+                  <input class="_cover" type="radio" id="CoverUsd3d" name="money" data-money="usd" value="125.55">
+                  <label for="CoverUsd3d">&dollar;125.55</label>
+                  <input class="_cover" type="radio" id="CoverUsd48h" name="money" data-money="usd" value="125.55">
+                  <label for="CoverUsd48h">&dollar;125.55</label>
+                  <input class="_cover" type="radio" id="CoverUsd24h" name="money" data-money="usd" value="125.55">
+                  <label for="CoverUsd24h">&dollar;125.55</label>
+                </div>
+              </div><!--/.content__row-->
+              <div class="content__row content__row--active">
+                <div class="content__row--title">CV Package: CV + cover letter writing</div>
+                <div class="content__row--data">
+                  <input class="_cv" type="radio" id="CVUsd5d" name="money" data-money="usd" value="125.55">
+                  <label for="CVUsd5d">&dollar;125.55</label>
+                  <input class="_cv" type="radio" id="CVUsd3d" name="money" data-money="usd" value="125.55">
+                  <label for="CVUsd3d">&dollar;125.55</label>
+                  <input class="_cv" type="radio" id="CVUsd48h" name="money" data-money="usd" value="125.55">
+                  <label for="CVUsd48h">&dollar;125.55</label>
+                  <input class="_cv" type="radio" id="CVUsd24h" name="money" data-money="usd" value="125.55">
+                  <label for="CVUsd24h">&dollar;125.55</label>
+                </div>
+              </div><!--/.content__row-->
+              <div class="content__row">
+                <div class="content__row--title">New! E-Cover Letter Writing</div>
+                <div class="content__row--data">
+                  <input class="_letter" type="radio" id="LetterUsd5d" name="money" data-money="usd" value="125.55">
+                  <label for="LetterUsd5d">&dollar;125.55</label>
+                  <input class="_letter" type="radio" id="LetterUsd3d" name="money" data-money="usd" value="125.55">
+                  <label for="LetterUsd3d">&dollar;125.55</label>
+                  <input class="_letter" type="radio" id="LetterUsd48h" name="money" data-money="usd" value="125.55">
+                  <label for="LetterUsd48h">&dollar;125.55</label>
+                  <input class="_letter" type="radio" id="LetterUsd24h" name="money" data-money="usd" value="125.55">
+                  <label for="LetterUsd24h">&dollar;125.55</label>
+                </div>
+              </div><!--/.content__row-->
+              <div class="content__row content__row--active">
+                <div class="content__row--title">Online Resume Storage</div>
+                <div class="content__row--data">
+                  <input class="_storage" type="radio" id="StorageUsd5d" name="money" data-money="usd" value="125.55">
+                  <label for="StorageUsd5d">&dollar;125.55</label>
+                  <input class="_storage" type="radio" id="StorageUsd3d" name="money" data-money="usd" value="125.55">
+                  <label for="StorageUsd3d">&dollar;125.55</label>
+                  <input class="_storage" type="radio" id="StorageUsd48h" name="money" data-money="usd" value="125.55">
+                  <label for="StorageUsd48h">&dollar;125.55</label>
+                  <input class="_storage" type="radio" id="StorageUsd24h" name="money" data-money="usd" value="125.55">
+                  <label for="StorageUsd24h">&dollar;125.55</label>
+                </div>
+              </div><!--/.content__row-->
             </div><!--/.body__content-->
           </div><!--/.table__body-->
+          <!--Table footer-->
+          <div class="table__footer">
+            <div class="table__footer--row">
+              <div class="footer__price">
+                <p>Total price:</p>
+                <h3 class="_summ"></h3>
+              </div><!--/.footer__price-->
+              <div class="footer__btn">
+                <button class="btn _summBtn">proceed to order</button>
+              </div><!--/.footer__btn-->
+            </div><!--/.row-->
+          </div><!--/.table__footer-->
         </div><!--table-->
         <aside class="aside">
           <div class="aside__collum">
