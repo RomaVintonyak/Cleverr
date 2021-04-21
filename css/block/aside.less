@@ -2,6 +2,15 @@
 
 .aside {
   width: 32%;
+
+  @media @mobile {
+    margin-top: 2rem;
+    width     : 80%;
+  }
+
+  @media @mobile-sm {
+    width: 100%;
+  }
 }
 
 .aside__collum {
@@ -20,6 +29,10 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media @tablet {
+      margin-bottom: 2rem;
+    }
   }
 
   h2 {
@@ -41,5 +54,9 @@
     text-transform: uppercase;
     line-height   : 1.2;
     text-align    : left;
+
+    @media @tablet {
+      font-size: 1.6rem;
+    }
   }
 }

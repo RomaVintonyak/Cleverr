@@ -393,6 +393,11 @@ a:focus {
   bottom: 0;
   right: 60%;
 }
+@media (max-width:991px) {
+  .menu__clouds--2 {
+    right: 80%;
+  }
+}
 .menu__clouds--3 {
   position: absolute;
   right: 60%;
@@ -406,6 +411,12 @@ a:focus {
 .main__row {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width:767px) {
+  .main__row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 /*4. table*/
 /*===table header===*/
@@ -432,6 +443,11 @@ a:focus {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (max-width:767px) {
+  .table {
+    width: 100%;
+  }
 }
 .icon__collum p {
   margin-top: 0.5rem;
@@ -468,7 +484,7 @@ a:focus {
 .currency__input {
   position: absolute;
   bottom: 0;
-  left: 150px;
+  right: 36%;
   height: 3rem;
   width: 350px;
   display: flex;
@@ -503,10 +519,26 @@ a:focus {
   border-style: solid;
   background-color: #ffffff;
 }
+@media (max-width:1199px) {
+  .currency__input {
+    right: 26%;
+  }
+}
+@media (max-width:991px) {
+  .currency__input {
+    right: 7%;
+  }
+}
+@media (max-width:767px) {
+  .currency__input {
+    width: 80%;
+    right: 0;
+  }
+}
 .services__input {
   position: absolute;
   bottom: 0;
-  left: 150px;
+  right: 36%;
   height: 3rem;
   width: 350px;
 }
@@ -527,10 +559,26 @@ a:focus {
 .services__input input:focus {
   outline: none;
 }
+@media (max-width:1199px) {
+  .services__input {
+    right: 26%;
+  }
+}
+@media (max-width:991px) {
+  .services__input {
+    right: 7%;
+  }
+}
+@media (max-width:767px) {
+  .services__input {
+    width: 80%;
+    right: 0;
+  }
+}
 .select__type {
   position: absolute;
   bottom: 0;
-  left: 150px;
+  right: 36%;
   height: 3rem;
   width: 350px;
 }
@@ -568,12 +616,33 @@ a:focus {
   transform: rotate(45deg);
   pointer-events: none;
 }
+@media (max-width:1199px) {
+  .select__type {
+    right: 26%;
+  }
+}
+@media (max-width:991px) {
+  .select__type {
+    right: 7%;
+  }
+}
+@media (max-width:767px) {
+  .select__type {
+    width: 80%;
+    right: 0;
+  }
+}
 .select__title {
   font-size: 1.4rem;
   font-family: 'Roboto', sans-serif;
   color: #333333;
   line-height: 1.2;
   text-align: left;
+}
+@media (max-width:570px) {
+  .select__title {
+    width: 20%;
+  }
 }
 ._currency[type="radio"]:checked + label {
   border-width: 1px;
@@ -755,15 +824,37 @@ a:focus {
   font-weight: bold;
   margin-right: 1.5rem;
 }
+@media (max-width:570px) {
+  .footer__price p {
+    margin-right: 1rem;
+    font-size: 1.4rem;
+  }
+}
 .footer__price h3 {
   font-size: 2.4rem;
   font-family: 'Roboto', sans-serif;
   color: #333333;
   font-weight: bold;
 }
+@media (max-width:570px) {
+  .footer__price h3 {
+    font-size: 2rem;
+  }
+}
 /*5. aside*/
 .aside {
   width: 32%;
+}
+@media (max-width:767px) {
+  .aside {
+    margin-top: 2rem;
+    width: 80%;
+  }
+}
+@media (max-width:570px) {
+  .aside {
+    width: 100%;
+  }
 }
 .aside__collum {
   border-radius: 20px;
@@ -780,6 +871,11 @@ a:focus {
 }
 .aside__collum:last-child {
   margin-bottom: 0;
+}
+@media (max-width:991px) {
+  .aside__collum:last-child {
+    margin-bottom: 2rem;
+  }
 }
 .aside__collum h2 {
   text-align: center;
@@ -799,6 +895,11 @@ a:focus {
   text-transform: uppercase;
   line-height: 1.2;
   text-align: left;
+}
+@media (max-width:991px) {
+  .aside__collum p {
+    font-size: 1.6rem;
+  }
 }
 /*6. btn*/
 .btn {
@@ -820,6 +921,23 @@ a:focus {
 }
 .btn:active {
   transform: scale(0.99);
+}
+@media (max-width:991px) {
+  .btn {
+    width: 250px;
+  }
+}
+@media (max-width:767px) {
+  .btn {
+    width: 200px;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width:570px) {
+  .btn {
+    width: 160px;
+    font-size: 1.3rem;
+  }
 }
 /*7. reviews*/
 .reviews__title h2 {
@@ -863,6 +981,18 @@ a:focus {
   font-weight: bold;
   line-height: 1.2;
 }
+@media (max-width:767px) {
+  .reviews__row--coll {
+    margin: 0.6rem;
+  }
+}
+@media (max-width:767px) {
+  .reviews__row {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+}
 /*8. footer*/
 .footer {
   width: 100%;
@@ -879,10 +1009,25 @@ a:focus {
   left: 0;
   z-index: 5;
 }
+@media (max-width:991px) {
+  .footer__row--top {
+    display: none;
+  }
+}
 .footer__row--bottom {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 5;
+}
+@media (max-width:991px) {
+  .footer__row {
+    height: 20rem;
+  }
+}
+@media (max-width:767px) {
+  .footer__row {
+    height: 15rem;
+  }
 }
 /*# sourceMappingURL=./style.css.map */

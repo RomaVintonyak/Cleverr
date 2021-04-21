@@ -29,6 +29,10 @@
       align-items    : center;
     }
   }
+
+  @media @mobile {
+    width: 100%;
+  }
 }
 
 .icon__collum {
@@ -76,7 +80,7 @@
 .currency__input {
   position        : absolute;
   bottom          : 0;
-  left            : 150px;
+  right           : 36%;
   height          : 3rem;
   width           : 350px;
   display         : flex;
@@ -113,12 +117,25 @@
       background-color: rgb(255, 255, 255);
     }
   }
+
+  @media @notebook {
+    right: 26%;
+  }
+
+  @media @tablet {
+    right: 7%;
+  }
+
+  @media @mobile {
+    width: 80%;
+    right: 0;
+  }
 }
 
 .services__input {
   position: absolute;
   bottom  : 0;
-  left    : 150px;
+  right   : 36%;
   height  : 3rem;
   width   : 350px;
 
@@ -140,12 +157,25 @@
       outline: none;
     }
   }
+
+  @media @notebook {
+    right: 26%;
+  }
+
+  @media @tablet {
+    right: 7%;
+  }
+
+  @media @mobile {
+    width: 80%;
+    right: 0;
+  }
 }
 
 .select__type {
   position: absolute;
   bottom  : 0;
-  left    : 150px;
+  right   : 36%;
   height  : 3rem;
   width   : 350px;
 
@@ -185,6 +215,19 @@
     transform     : rotate(45deg);
     pointer-events: none;
   }
+
+  @media @notebook {
+    right: 26%;
+  }
+
+  @media @tablet {
+    right: 7%;
+  }
+
+  @media @mobile {
+    width: 80%;
+    right: 0;
+  }
 }
 
 .select__title {
@@ -193,6 +236,10 @@
   color      : rgb(51, 51, 51);
   line-height: 1.2;
   text-align : left;
+
+  @media @mobile-sm {
+    width: 20%;
+  }
 }
 
 ._currency[type="radio"]:checked+label {
@@ -403,6 +450,11 @@
     color       : @text;
     font-weight : bold;
     margin-right: 1.5rem;
+
+    @media @mobile-sm {
+      margin-right: 1rem;
+      font-size   : 1.4rem;
+    }
   }
 
   h3 {
@@ -410,6 +462,10 @@
     font-family: @roboto;
     color      : rgb(51, 51, 51);
     font-weight: bold;
+
+    @media @mobile-sm {
+      font-size: 2rem;
+    }
   }
 
 }
